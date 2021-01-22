@@ -3,7 +3,8 @@ class Box {
 
         var options = {
             restitution:0.4,
-            friction:0.5
+            friction:0.5,
+            density:0.2
         }
 
         this.pix = Bodies.rectangle(x,y,width,height,options);

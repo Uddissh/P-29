@@ -4,7 +4,7 @@ class Polygon {
         var options = {
             isStatic:false,
             restitution:0.8,
-            friction:0.5,
+            friction:0.8,
             density:0.5
         }
 

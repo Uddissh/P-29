@@ -37,9 +37,15 @@ function setup() {
       world = engine.world;
     //Polygon
     //polygon = new Polygon(195,200,20);
-    polygon = Bodies.circle(195, 200, 20)
+    var options = {
+      isStatic:false,
+      restitution:0.8,
+      friction:0.8,
+      density:0.5
+  }
+    polygon = Bodies.circle(105, 200, 20, options)
     World.add(world, polygon);
-
+    
     //Sling
     //console.log(A)
     sling = new Sling(this.polygon,{x:100, y:200})
